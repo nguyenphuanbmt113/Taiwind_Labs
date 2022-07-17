@@ -4,38 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TailwindCSS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <link rel="stylesheet" href="./build/tailwind.css" />
-    <link rel="stylesheet" href="./build/app.css" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="../build/tailwind.css" />
+    <link rel="stylesheet" href="../build/app.css" />
   </head>
-  <!-- npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch -->
   <body class="bg-purple-500">
     <div class="p-4 text-center bg-gray-300 text-lg">Taiwind Labs</div>
     <div class="max-w-[1200px] mx-auto p-10">
-      <div class="grid grid-cols-4 grid-rows-4 gap-5 sm:grid-cols-1">
-        <div class="bg-red-300 rounded-lg shadow-xl col-span-3 sm:col-span-1">
+      <div class="grid gap-4 grid-cols-4 grid-flow-row">
+        <div class="bg-red-300 rounded-lg shadow-xl col-span-3">
           <div class="h-24"></div>
         </div>
-        <div class="bg-blue-400 rounded-lg shadow-xl">
+        <div class="bg-red-500 rounded-lg shadow-xl col-span-3">
           <div class="h-24"></div>
         </div>
-        <div
-          class="bg-yellow-300 rounded-lg shadow-xl row-span-2 sm:row-span-1"
-        >
+        <div class="bg-yellow-300 rounded-lg shadow-xl col-span-3 row-span-2">
           <div class="h-24"></div>
         </div>
         <div class="bg-white rounded-lg shadow-xl">
